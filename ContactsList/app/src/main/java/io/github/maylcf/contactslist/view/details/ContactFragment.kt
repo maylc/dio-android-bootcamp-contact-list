@@ -1,8 +1,9 @@
-package io.github.maylcf.contactslist
+package io.github.maylcf.contactslist.view.details
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import io.github.maylcf.contactslist.R
 import io.github.maylcf.contactslist.databinding.FragmentContactBinding
 
 class ContactFragment : Fragment(R.layout.fragment_contact) {
