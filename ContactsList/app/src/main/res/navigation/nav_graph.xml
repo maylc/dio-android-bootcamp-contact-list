@@ -7,22 +7,35 @@
 
     <fragment
         android:id="@+id/ContactFragment"
-        android:name="io.github.maylcf.contactslist.ContactFragment"
+        android:name="io.github.maylcf.contactslist.view.details.ContactFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_contact">
 
         <action
             android:id="@+id/action_contact_to_list"
             app:destination="@id/ContactListFragment" />
+
+        <argument
+            android:name="contactId"
+            android:defaultValue="-1"
+            app:argType="integer" />
     </fragment>
+
     <fragment
         android:id="@+id/ContactListFragment"
-        android:name="io.github.maylcf.contactslist.ContactListFragment"
+        android:name="io.github.maylcf.contactslist.view.list.ContactListFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_contact_list">
 
         <action
-            android:id="@+id/action_list_to_new_contact"
-            app:destination="@id/ContactFragment" />
+            android:id="@+id/action_list_to_contact"
+            app:destination="@id/ContactFragment" >
+
+            <argument
+                android:name="contactId"
+                app:argType="integer"
+                android:defaultValue="-1" />
+
+        </action>
     </fragment>
 </navigation>
