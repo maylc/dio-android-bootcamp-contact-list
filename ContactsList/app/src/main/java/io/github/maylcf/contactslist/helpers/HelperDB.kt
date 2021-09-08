@@ -6,9 +6,7 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import io.github.maylcf.contactslist.model.Contact
 
-class HelperDB(
-    context: Context
-) : SQLiteOpenHelper(context, dbName, null, version) {
+class HelperDB(context: Context) : SQLiteOpenHelper(context, dbName, null, version) {
 
     companion object {
         private const val dbName = "contato.db"

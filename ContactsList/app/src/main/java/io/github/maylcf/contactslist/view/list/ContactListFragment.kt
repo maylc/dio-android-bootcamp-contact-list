@@ -69,6 +69,7 @@ class ContactListFragment : Fragment(R.layout.fragment_contact_list) {
             requireActivity().runOnUiThread {
                 adapter = ContactAdapter(requireContext(), filteredList) { onClickItemRecyclerView(it) }
                 binding.recyclerView.adapter = adapter
+                adapter?.notifyDataSetChanged()
 
                 binding.progressBar.visibility = View.GONE
                 Toast.makeText(context, "Searching for $busca", Toast.LENGTH_SHORT).show()
