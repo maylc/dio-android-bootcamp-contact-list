@@ -17,10 +17,8 @@ class ContactFragment : Fragment(R.layout.fragment_contact) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         binding = FragmentContactBinding.bind(view)
 
-        setupToolbar()
         setupContact()
         setupViews()
     }
@@ -44,10 +42,6 @@ class ContactFragment : Fragment(R.layout.fragment_contact) {
                 binding.contactPhone.editText?.setText(contact.phone)
             }
         }).start()
-    }
-
-    private fun setupToolbar() {
-        // setupToolBar(toolBar, "Contato",true)
     }
 
     private fun isNewContact(): Boolean {

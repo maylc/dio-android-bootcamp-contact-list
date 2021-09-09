@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import io.github.maylcf.contactslist.R
 import io.github.maylcf.contactslist.application.ContactApplication
 import io.github.maylcf.contactslist.databinding.FragmentContactListBinding
-import io.github.maylcf.contactslist.view.list.adapter.ContactAdapter
 import io.github.maylcf.contactslist.model.Contact
+import io.github.maylcf.contactslist.view.list.adapter.ContactAdapter
 
 class ContactListFragment : Fragment(R.layout.fragment_contact_list) {
 
@@ -22,17 +22,11 @@ class ContactListFragment : Fragment(R.layout.fragment_contact_list) {
         binding = FragmentContactListBinding.bind(view)
 
         setupViews()
-        setupToolbar()
     }
 
     override fun onResume() {
         super.onResume()
         onClickSearch()
-    }
-
-    private fun setupToolbar() {
-        // TODO: Implement
-        //(activity as MainActivity).supportActionBar?.title = ""
     }
 
     private fun setupViews() {

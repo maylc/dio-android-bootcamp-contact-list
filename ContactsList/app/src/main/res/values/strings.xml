@@ -2,8 +2,8 @@
     <string name="app_name">ContactsList</string>
 
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="contact_list_label">Contact List</string>
+    <string name="contact_details_label">Contact</string>
 
     <!-- Contact List -->
     <string name="add_new_contact_label">Add New Contact</string>
